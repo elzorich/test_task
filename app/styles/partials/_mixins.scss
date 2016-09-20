@@ -1,0 +1,13 @@
+// Clearfix
+@mixin clearit {
+    &:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
+
+// Clearfix
+%clearit {
+    @include clearit;
+}

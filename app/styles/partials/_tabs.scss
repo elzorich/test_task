@@ -1,0 +1,48 @@
+.tab__item{
+    @include backface-visibility(hidden);
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    &:first-of-type{
+        margin-left: 0;
+    }
+    &.active{
+        .tab__link{
+            color: $red;
+            border-bottom: none;
+        }
+    }
+}
+
+.tab__link{
+    color: $orange;
+    font-size: 21px;
+    font-weight: bold;
+    border-bottom: 1px dotted $orange;
+    &:hover{
+        color: $red;
+        border-bottom: none;
+    }
+}
+
+.tab__content{
+    display: none;
+    &.active{
+        display: block;
+    }
+    p{
+        text-indent: 10px;
+    }
+}
+
+.tab__img{
+    float: left;
+    margin-right: 20px;
+}
+
+.text__wrap{
+    overflow: hidden;
+    p{
+        margin: 0 0 15px 0;
+    }
+}

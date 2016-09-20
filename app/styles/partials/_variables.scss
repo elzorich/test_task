@@ -1,0 +1,22 @@
+// ----- Variables ----- //
+
+// Colors
+$black: #000000;
+$white:#ffffff;
+$gray: #b7b7b7;
+$dark-grey: #5c5e5f;
+$red: #b91602;
+$orange: #fb871e;
+
+//defaults
+$bg:#000  url(../images/bg.jpg);
+$border-color: $gray;
+$border: 1px solid $border-color;
+
+// Fonts
+$font-size: 14px;
+$font-primary: "Arial Narrow", Arial, sans-serif;
+
+// Media queries
+$bp-800: max-width 800px;
+$bp-desktop: 800px;

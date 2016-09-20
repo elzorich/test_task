@@ -1,0 +1,109 @@
+input {
+    // This is a much safer way to display ios form elements
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+    border: none;
+    color: $dark-grey;
+}
+input{
+    &[type="email"], &[type="number"], &[type="password"], &[type="search"], &[type="tel"], &[type="text"], &[type="date"] {
+        font-family: $font-primary;
+        font-size: 16px;
+        height: 35px;
+        line-height: 35px;
+        @include border-radius(3px);
+        @include box-shadow(inset 0px 3px 3px -2px rgba(0,0,0,0.75));
+        margin: 0;
+        padding: 0 15px;
+        width: 100%;
+    }
+}
+
+input[type="search"].search__input {
+    padding: 0 15px 0 45px;
+    height: 37px;
+    line-height: 37px;
+    background: #fff url(../images/search.png)no-repeat 12px 50%;
+}
+
+.search__btn {
+    position: relative;
+    float: right;
+    z-index: 9;
+    margin-left: 6px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.search__fieldset{
+    max-width: 430px;
+    margin-bottom: 10px;
+}
+
+.search__wrap{
+    overflow: hidden;
+}
+
+
+.check__wrap{
+    margin-bottom: 8px;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: relative;
+    left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid $orange;
+}
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: '';
+    background: url(../images/check.png)0 0;
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width:13px;
+    height: 15px;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+[type="checkbox"]:not(:checked) + label:hover:before,
+[type="checkbox"]:checked + label:hover:before {
+    border: 1px solid $red;
+}
+
+[type="checkbox"]:not(:checked) + label:hover:after,
+[type="checkbox"]:checked + label:hover:after {
+    content: '';
+    background: url(../images/check.png) 13px 0;
+    position: absolute;
+    width:13px;
+    height: 15px;
+}
+
+
+
+

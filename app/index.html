@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Task</title>
+
+    <link rel="stylesheet" href="styles/libs/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+<section class="search">
+    <h2>1. Поиск</h2>
+    <form action="" method="post" class="search__form">
+        <fieldset class="search__fieldset">
+            <a href="#" class="btn btn-orange search__btn"><span class="btn-helper"></span>Найти</a>
+            <div class="search__wrap">
+                <input placeholder="почему" type="search" class="search__input">
+            </div>
+        </fieldset>
+        <fieldset class="search__fieldset">
+            <a href="#" class="btn btn-orange search__btn"><span class="btn-helper"></span>Go</a>
+            <div class="search__wrap">
+                <input placeholder="why" type="search" class="search__input">
+            </div>
+        </fieldset>
+    </form>
+</section>
+<section class="nav">
+    <h2>2. Адаптивный список</h2>
+    <div class="nav__wrap">
+        <div class="nav__mobile dropdown">
+            <div class="nav__menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <path fill="white" d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                </svg>
+            </div>
+            <div class="nav__selected">World Of Tanks</div>
+        </div>
+        <ul class="nav__list sub-menu">
+            <li class="nav__item"><a href="#" class="nav__link">World Of Tanks</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">World Of Warplanes</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">World Of Warships</a></li>
+        </ul>
+    </div>
+
+</section>
+<section class="tabs">
+    <h2>3. Вкладки</h2>
+    <ul class="tab__list" id="tabList">
+        <li class="tab__item active"><a href="#faq" class="tab__link">Вопросы и ответы</a></li>
+        <li class="tab__item"><a href="#rules" class="tab__link">Правила</a></li>
+        <li class="tab__item"><a href="#security" class="tab__link">Безопасность</a></li>
+    </ul>
+    <div class="tab__content active" id="faq">
+        <h3>Почему не рассматриваются заявки с жалобами на нарушение Правил игры?</h3>
+        <div class="text__column">
+            <p>После введения функционала «Пожаловаться» не рассматриваются заявки, созданные в Центр поддержки
+                пользователей о нарушении Правил игры по следующим пунктам:</p>
+            <ol>
+                <li>
+                    «Оскорбления и провокации»
+                    В данный пункт входит:
+                    - использование ненормативной лексики и оскорбление собеседников, применение унизительных кличек и
+                    прозвищ по расовому, национальному, религиозному либо половому признаку, а также провоцирование
+                    собеседника к их использованию;
+                    - клевета, размещение заведомо ложной информации об Игре, Администрации, Модераторах или
+                    Пользователях;
+                    - угрозы реальной расправы в отношенииили представителей Администрации Проекта. Все виды соглашения
+                </li>
+                <li>«Неинформативные сообщения»
+                    В данный пункт входит:
+                    - размещение информации (сообщения, фразы, символов и пр.), направленной на отвлечение Пользователей
+                    от темы беседы (флуд);
+                    - все виды рекламных сообщений, в частности ссылки на интернет-ресурсы.
+                    <p>Также не рассматриваются следующие заявки, созданные в Центр поддержки пользователей о нарушении
+                        Правил игры:</p>
+                </li>
+                <li>«Раскрытие позиций союзников»</li>
+                <li>«Выталкивание союзника»</li>
+                <li>«Неспортивное поведение»</li>
+                <li>«Повреждение союзников»</li>
+            </ol>
+        </div>
+    </div>
+    <div class="tab__content" id="rules">
+        <h3>Пользователь не вправе:</h3>
+        <ol>
+            <li>Распространять в коммерческих или некоммерческих целях Игру или ее копии, как путем распространения
+                материальных носителей с ней, так и путем ее размещения в сети интернет для представления доступа к ней
+                и (или) скачивания определенными лицами или неограниченным кругом лиц.
+            </li>
+            <li>Переводить <em>Игру</em> на другие языки без согласования с <strong>Wargaming</strong>.</li>
+            <li>Распространять в коммерческих или некоммерческих целях аудиовизуальные элементы, изображения, а также
+                иные объекты интеллектуальной собственности, присутствующие в <em>Игре</em> (кроме случаев, разрешенных
+                <strong>Wargaming</strong>).
+            </li>
+            <li>Распространять в коммерческих или некоммерческих целях Игровые элементы и Дополнительные возможности.
+            </li>
+            <li>Передавать права в отношении Игры, включая ее Дополнительные возможности, в коммерческих или
+                некоммерческих целях третьим лицам, в том числе путем передачи Аккаунта, заключения договора или иным
+                способом.
+            </li>
+            <li>Размещать в <em>Игре</em> материалы, оскорбляющие или унижающие честь и достоинство других Пользователей
+                или третьих лиц, или ссылки на такие материалы.
+            </li>
+        </ol>
+    </div>
+    <div class="tab__content" id="security">
+        <h3>Уважаемые игроки!</h3>
+        <img src="images/lock.jpg" class="tab__img">
+        <div class="text__wrap">
+            <p>Безопасность учётных записей пользователей — один из главных приоритетов компании Wargaming. В связи с
+                тем, что в открытый доступ попали пароли от миллионов email-адресов таких крупных почтовых сервисов, как
+                «Яндекс», Mail.ru и Gmail, в качестве меры предосторожности мы вновь начинаем глобальную кампанию по
+                повышению безопасности учётных записей Wargaming.net. </p>
+            <p>Акция «Защити свой пароль» проходит в World of Tanks и World of Warplanes с 9 сентября. Вы можете не
+                только повысить уровень безопасности игрового аккаунта, но и получить за это игровое золото.</p>
+            <p>Чтобы изменить свой пароль, необходимо авторизоваться на порталах World of Tanks или World of Warplanes,
+                зайти в «Личный кабинет» и выбрать опцию «Изменить пароль к игре». Бонус в игровом золоте будет начислен
+                один раз, после того как изменения вступят в силу.</p>
+        </div>
+    </div>
+</section>
+<section class="checkboxes">
+    <h2>4. Список опций</h2>
+    <div class="checkbox__wrap mCustomScrollbar" data-mcs-theme="dark-3">
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="scripts/libs/jquery.mCustomScrollbar.min.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.nav__list {
+    @extend %clearit;
+    display: block;
+    @include breakpoint($bp-800) {
+        display: none;
+    }
+}
+
+.nav__item{
+    @include backface-visibility(hidden);
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    @include breakpoint($bp-800) {
+        display: block;
+    }
+}
+
+.nav__link{
+    position: relative;
+    color: $white;
+    display: block;
+    letter-spacing: 0.1rem;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px;
+    @include border-radius(6px);
+    &:hover,
+    &:active{
+        background: $red;
+    }
+    @include breakpoint($bp-800) {
+        padding-left: 22px;
+        color: $gray;
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 14px;
+            background: url(../images/arrow.png) center no-repeat;
+            position: absolute;
+            left: 0;
+            margin: 8px 0 0 3px;
+            background-position: right 4px;
+            @include transition(width 0.3s);
+        }
+        &:hover,
+        &:active{
+            background: none;
+            color: $white;
+            &:after{
+                width:13px;
+            }
+        }
+    }
+}
+
+.nav__wrap{
+    position: relative;
+    min-height: 75px;
+}
+
+.nav__mobile{
+    display: block;
+    position: absolute;
+    top: 4px;
+    cursor: pointer;
+    @include breakpoint($bp-desktop) {
+        display: none!important;
+    }
+}
+
+.nav__menu{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav__selected{
+    display: inline-block;
+}
+
+

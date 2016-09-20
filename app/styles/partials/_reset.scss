@@ -1,0 +1,92 @@
+article, aside, details, figcaption, figure, footer, header, img, hgroup, main, menu, nav, section, video {
+    display: block;
+}
+
+// better than using slow * selector
+a, abbr, acronym, address, article, aside, audio, blockquote, body, canvas, cite, code, div, dd, dl, dt, em, figcaption, figure, fieldset, footer, form, header, hgroup, html, h4, h5, h6, iframe, img, label, li, mark, nav, optgroup, pre, q, span, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, tr, section, time, ul, video {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover,
+a:active,
+a:focus,
+object,
+*:focus {
+    outline: 0 none transparent;
+}
+
+body, html {
+    min-height: 100%;
+}
+
+input, optgroup, select, textarea {
+    color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button {
+    @include border-radius(0);
+    display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+// Remove inner padding and border in Firefox 4+.
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%; // disbales font size increase with orientation change
+    -ms-text-size-adjust: 100%;
+}
+
+input {
+    line-height: normal;
+    margin: 0;
+
+    &[type="number"], &[type="search"], &[type="text"] {
+        -webkit-appearance: none;
+    }
+
+    &[type="password"] {
+        font-family: arial, sans-serif;
+    }
+
+}
+
+img {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th {
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+ul {
+    list-style-type: none;
+}
