@@ -13,5 +13,5 @@
 
 ### When doing development on your project, you can run the compass watcher to keep your CSS files up to date as changes are made.
 
-1. Enter your project, run:  cd <myproject>
+1. Enter your project
 2. Run: compass watch
